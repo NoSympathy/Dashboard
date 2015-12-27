@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NoSympathy Guild Panel", "NoSympathy Guild Panel\NoSympathy Guild Panel.vbproj", "{1B01A0C9-46AC-4878-A398-9F18656BC4D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DE51F6A-BF6C-4429-B062-7FAAB30B24EE} = {3DE51F6A-BF6C-4429-B062-7FAAB30B24EE}
+		{3F3158AE-88B8-4F7A-BA54-16611537E2E3} = {3F3158AE-88B8-4F7A-BA54-16611537E2E3}
+		{7B59FDD5-3150-4CB2-8D90-CE5F6B6D2CDA} = {7B59FDD5-3150-4CB2-8D90-CE5F6B6D2CDA}
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "APIControllers", "APIControllers\APIControllers.vbproj", "{3DE51F6A-BF6C-4429-B062-7FAAB30B24EE}"
 EndProject

@@ -22,22 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.TabPage10 = New System.Windows.Forms.TabPage()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.lblCountMember = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -59,6 +67,7 @@ Partial Class Form1
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.ShowToolTips = True
         Me.TabControl1.Size = New System.Drawing.Size(794, 507)
         Me.TabControl1.TabIndex = 0
         '
@@ -77,24 +86,44 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackgroundImage = Global.NoSympathy_Guild_Panel.My.Resources.Resources.component
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Image = Global.NoSympathy_Guild_Panel.My.Resources.Resources.component
-        Me.Button1.Location = New System.Drawing.Point(709, 404)
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(744, 437)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 67)
+        Me.Button1.Size = New System.Drawing.Size(35, 34)
         Me.Button1.TabIndex = 0
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.WebControl2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage2.Size = New System.Drawing.Size(1570, 693)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Size = New System.Drawing.Size(786, 478)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "     Music Playlist     "
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(62, 524)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'WebControl2
+        '
+        Me.WebControl2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebControl2.Location = New System.Drawing.Point(4, 4)
+        Me.WebControl2.Size = New System.Drawing.Size(778, 470)
+        Me.WebControl2.TabIndex = 0
         '
         'TabPage3
         '
@@ -117,8 +146,19 @@ Partial Class Form1
         Me.TabPage4.Text = "     Guild Members     "
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'ListView1
+        '
+        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(786, 478)
+        Me.ListView1.TabIndex = 0
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Tile
+        '
         'TabPage5
         '
+        Me.TabPage5.Controls.Add(Me.WebControl1)
         Me.TabPage5.Location = New System.Drawing.Point(4, 25)
         Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Name = "TabPage5"
@@ -126,6 +166,13 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "     Dynamic Events     "
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'WebControl1
+        '
+        Me.WebControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebControl1.Location = New System.Drawing.Point(0, 0)
+        Me.WebControl1.Size = New System.Drawing.Size(786, 478)
+        Me.WebControl1.TabIndex = 0
         '
         'TabPage6
         '
@@ -182,18 +229,31 @@ Partial Class Form1
         Me.LinkLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Green
-        Me.LinkLabel1.Location = New System.Drawing.Point(662, 527)
+        Me.LinkLabel1.Location = New System.Drawing.Point(721, 530)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(85, 12)
         Me.LinkLabel1.TabIndex = 1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Personal Info"
         '
+        'lblCountMember
+        '
+        Me.lblCountMember.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.lblCountMember.AutoSize = True
+        Me.lblCountMember.Font = New System.Drawing.Font("MS Reference Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCountMember.Location = New System.Drawing.Point(296, 528)
+        Me.lblCountMember.Name = "lblCountMember"
+        Me.lblCountMember.Size = New System.Drawing.Size(113, 15)
+        Me.lblCountMember.TabIndex = 2
+        Me.lblCountMember.Text = "{members_count}"
+        Me.lblCountMember.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(823, 548)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.lblCountMember)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
@@ -203,7 +263,9 @@ Partial Class Form1
         Me.Text = "{title}"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
+        Me.TabPage5.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -224,4 +286,7 @@ Partial Class Form1
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents ListView1 As System.Windows.Forms.ListView
     Friend WithEvents lblCountMember As System.Windows.Forms.Label
+    Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
+    Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
+    Friend WithEvents Button2 As Button
 End Class
