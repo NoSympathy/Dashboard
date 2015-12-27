@@ -16,6 +16,12 @@ Public Class Guild
     End Sub
 
     Public Sub New(json As String)
-        JsonConvert.DeserializeObject(Of Guild)(json)
+        Dim _guild = JsonConvert.DeserializeObject(Of Guild)(json)
+
+        Me.Emblem = _guild.Emblem
+        Me.GuildName = _guild.GuildName
+        Me.Logs = _guild.Logs
+        Me.Motd = _guild.Motd
+
     End Sub
 End Class

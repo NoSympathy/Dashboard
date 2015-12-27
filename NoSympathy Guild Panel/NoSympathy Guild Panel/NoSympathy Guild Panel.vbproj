@@ -153,6 +153,14 @@
       <Project>{3DE51F6A-BF6C-4429-B062-7FAAB30B24EE}</Project>
       <Name>APIControllers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\APICore\APICore.vbproj">
+      <Project>{7b59fdd5-3150-4cb2-8d90-ce5f6b6d2cda}</Project>
+      <Name>APICore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.vbproj">
+      <Project>{3f3158ae-88b8-4f7a-ba54-16611537e2e3}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\component.png" />
