@@ -1,0 +1,104 @@
+Achievements
+---------------------------
+achievements: Returns information about achievements
+achievements/daily: Returns information about daily achievements
+achievements/groups: Returns information about achievement groups.
+achievements/categories: Returns information about achievement categories.
+
+##Authenticated
+
+####These endpoints access account data and require an API key to view.
+---------------------------
+account: Returns information about an account associated with an API key.
+account/achievements: Returns information about an account's achievement progress.
+characters: Returns information on an account's characters.
+pvp/stats: Returns general information on a player's performance in sPvP.
+pvp/games: Returns more detailed information on the player's most recent sPvP matches.
+
+####Game Mechanics
+---------------------------
+specializations: Returns information about specializations
+skills: Returns information about skills
+traits: Returns information about traits
+
+####Guild
+---------------------------
+emblem: Returns image resources needed to render guild emblems.
+guild/permissions: Returns information about guild rank permissions.
+guild/upgrades: Returns information about guild upgrades and scribe decorations.
+
+####Guild Authenticated
+These endpoints access guild-specific data and require an API key from the guild owner to view.
+---------------------------
+guild/:id/log: Returns information about a guild's event log. (Unreleased)
+guild/:id/members: Returns information about members of a guild.
+guild/:id/ranks: Returns information about the permission ranks of a guild.
+
+####Items ######(Not yet development ready)
+---------------------------
+items: Returns information about items
+materials: Returns information about materials
+recipes: Returns information about recipes
+recipes/search: A search interface for recipes
+skins: Returns information about skins
+
+####Map information ######(Not yet development ready)
+---------------------------
+continents: Returns a list of continents and information about each continent
+maps: Returns information about maps in the game
+
+####Trading post ######(Not yet development ready)
+---------------------------
+commerce/listings: Returns trading post listings
+commerce/exchange: Returns gem exchange prices
+commerce/prices: Returns buy and sell listing information
+
+####World vs. World
+---------------------------
+wvw/matches: Returns information about current WvW matchups.
+wvw/objectives: Returns information about WvW objectives.
+
+####Miscellaneous
+---------------------------
+build: Returns the current build id
+colors: Returns information about dye colors ######(Not yet development ready)
+files: Returns commonly requested assets
+worlds: Returns world names
+Version 1 endpoints
+
+
+##The API version 1 provides the following endpoints:
+
+####Dynamic events
+---------------------------
+events: Returns the current status of events for a specific world.
+Note: This endpoint is obsolete due to the implementation of Megaserver technology. There are plans to replace it with something that returns data about the rotating world bosses, but nothing specific has been announced.
+event_names: Returns a list of localized event names.
+map_names: Returns a list of localized map names.
+world_names: Returns a list of localized world names.
+event_details: Returns detailed information about events.
+
+####Guilds
+---------------------------
+guild_details: Returns detailed information about a guild.
+
+####Items ######(Not yet development ready)
+---------------------------
+items: Returns a list of discovered items.
+item_details: Returns detailed information about an item.
+recipes: Returns a list of discovered recipes.
+recipe_details: Returns detailed information about a recipe.
+skins: Returns a list of skins.
+skin_details: Returns detailed information about a skin.
+
+####Map information ######(Not yet development ready)
+---------------------------
+continents: Returns a list of continents and information about each continent.
+maps: Returns a list of maps in the game.
+map_floor: Returns detailed information about a map floor
+
+####World vs. World
+---------------------------
+wvw/matches: Returns the currently running WvW matches.
+wvw/match_details: Returns details about a WvW match.
+wvw/objective_names: Returns a list of WvW objective names.
