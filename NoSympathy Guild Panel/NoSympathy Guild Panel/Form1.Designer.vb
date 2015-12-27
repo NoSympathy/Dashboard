@@ -36,6 +36,7 @@ Partial Class Form1
         Me.TabPage10 = New System.Windows.Forms.TabPage()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lblCountMember = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
@@ -183,7 +184,7 @@ Partial Class Form1
         Me.LinkLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Green
-        Me.LinkLabel1.Location = New System.Drawing.Point(725, 527)
+        Me.LinkLabel1.Location = New System.Drawing.Point(662, 527)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(85, 12)
         Me.LinkLabel1.TabIndex = 1
@@ -200,11 +201,20 @@ Partial Class Form1
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Tile
         '
+        'lblCountMember
+        '
+        Me.lblCountMember.AutoSize = True
+        Me.lblCountMember.Location = New System.Drawing.Point(764, 526)
+        Me.lblCountMember.Name = "lblCountMember"
+        Me.lblCountMember.Size = New System.Drawing.Size(0, 16)
+        Me.lblCountMember.TabIndex = 2
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(823, 548)
+        Me.Controls.Add(Me.lblCountMember)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
         Me.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -233,4 +243,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents ListView1 As System.Windows.Forms.ListView
+    Friend WithEvents lblCountMember As System.Windows.Forms.Label
 End Class

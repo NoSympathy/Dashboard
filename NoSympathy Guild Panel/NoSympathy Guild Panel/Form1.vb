@@ -5,6 +5,7 @@ Imports Newtonsoft.Json
 
 
 Public Class Form1
+    Dim count As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "NoSympathy Guild Panel"
 
@@ -19,6 +20,10 @@ Public Class Form1
         For Each member As Member In members
             ListView1.Items.Add(member.Name, member.Name + "-" + member.Rank)
         Next
+
+        count = members.Count
+
+        lblCountMember.Text = count.ToString() + " members"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -30,6 +35,10 @@ Public Class Form1
     End Sub
 
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
-        
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblCountMember.Click
+
     End Sub
 End Class
