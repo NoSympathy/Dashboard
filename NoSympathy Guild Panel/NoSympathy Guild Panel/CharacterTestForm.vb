@@ -17,12 +17,9 @@ Public Class CharacterTestForm
         DataGridView1.DataSource = CharacterBindingSource
         RichTextBox1.Text = json
 
-
-
-
-
     End Sub
 
-
-
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Personal_Web.Show()
+    End Sub
 End Class
