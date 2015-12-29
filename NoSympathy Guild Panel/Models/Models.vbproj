@@ -66,6 +66,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.vb" />
     <Compile Include="Guild.vb" />
     <Compile Include="Member.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -83,6 +84,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="World.vb" />
+    <Compile Include="WvW.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
