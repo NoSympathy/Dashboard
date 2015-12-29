@@ -32,7 +32,6 @@ Partial Class CharacterTestForm
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.CharacterBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.CharacterBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -45,10 +44,24 @@ Partial Class CharacterTestForm
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.CharacterBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.CharacterBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CharacterBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LevelDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RaceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProfessionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RankDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DeathsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JoinedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CreatedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.CharacterBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CharacterBindingNavigator.SuspendLayout()
-        CType(Me.CharacterBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CharacterBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CharacterBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -133,11 +146,6 @@ Partial Class CharacterTestForm
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'CharacterBindingSource
-        '
-        Me.CharacterBindingSource.AllowNew = False
-        Me.CharacterBindingSource.DataSource = GetType(Models.Character)
         '
         'BindingNavigatorCountItem
         '
@@ -226,11 +234,89 @@ Partial Class CharacterTestForm
         '
         'DataGridView1
         '
+        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.LevelDataGridViewTextBoxColumn, Me.RaceDataGridViewTextBoxColumn, Me.ProfessionDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.RankDataGridViewTextBoxColumn, Me.DeathsDataGridViewTextBoxColumn, Me.AgeDataGridViewTextBoxColumn, Me.JoinedDataGridViewTextBoxColumn, Me.IDDataGridViewTextBoxColumn, Me.CreatedDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.CharacterBindingSource1
         Me.DataGridView1.Location = New System.Drawing.Point(460, 28)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(505, 327)
         Me.DataGridView1.TabIndex = 7
+        '
+        'CharacterBindingSource
+        '
+        Me.CharacterBindingSource.AllowNew = False
+        Me.CharacterBindingSource.DataSource = GetType(Models.Character)
+        '
+        'CharacterBindingSource1
+        '
+        Me.CharacterBindingSource1.DataSource = GetType(Models.Character)
+        '
+        'NameDataGridViewTextBoxColumn
+        '
+        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "Name"
+        Me.NameDataGridViewTextBoxColumn.HeaderText = "Name"
+        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
+        '
+        'LevelDataGridViewTextBoxColumn
+        '
+        Me.LevelDataGridViewTextBoxColumn.DataPropertyName = "Level"
+        Me.LevelDataGridViewTextBoxColumn.HeaderText = "Level"
+        Me.LevelDataGridViewTextBoxColumn.Name = "LevelDataGridViewTextBoxColumn"
+        '
+        'RaceDataGridViewTextBoxColumn
+        '
+        Me.RaceDataGridViewTextBoxColumn.DataPropertyName = "Race"
+        Me.RaceDataGridViewTextBoxColumn.HeaderText = "Race"
+        Me.RaceDataGridViewTextBoxColumn.Name = "RaceDataGridViewTextBoxColumn"
+        '
+        'ProfessionDataGridViewTextBoxColumn
+        '
+        Me.ProfessionDataGridViewTextBoxColumn.DataPropertyName = "Profession"
+        Me.ProfessionDataGridViewTextBoxColumn.HeaderText = "Profession"
+        Me.ProfessionDataGridViewTextBoxColumn.Name = "ProfessionDataGridViewTextBoxColumn"
+        '
+        'GenderDataGridViewTextBoxColumn
+        '
+        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
+        '
+        'RankDataGridViewTextBoxColumn
+        '
+        Me.RankDataGridViewTextBoxColumn.DataPropertyName = "Rank"
+        Me.RankDataGridViewTextBoxColumn.HeaderText = "Rank"
+        Me.RankDataGridViewTextBoxColumn.Name = "RankDataGridViewTextBoxColumn"
+        '
+        'DeathsDataGridViewTextBoxColumn
+        '
+        Me.DeathsDataGridViewTextBoxColumn.DataPropertyName = "Deaths"
+        Me.DeathsDataGridViewTextBoxColumn.HeaderText = "Deaths"
+        Me.DeathsDataGridViewTextBoxColumn.Name = "DeathsDataGridViewTextBoxColumn"
+        '
+        'AgeDataGridViewTextBoxColumn
+        '
+        Me.AgeDataGridViewTextBoxColumn.DataPropertyName = "Age"
+        Me.AgeDataGridViewTextBoxColumn.HeaderText = "Age"
+        Me.AgeDataGridViewTextBoxColumn.Name = "AgeDataGridViewTextBoxColumn"
+        '
+        'JoinedDataGridViewTextBoxColumn
+        '
+        Me.JoinedDataGridViewTextBoxColumn.DataPropertyName = "Joined"
+        Me.JoinedDataGridViewTextBoxColumn.HeaderText = "Joined"
+        Me.JoinedDataGridViewTextBoxColumn.Name = "JoinedDataGridViewTextBoxColumn"
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        '
+        'CreatedDataGridViewTextBoxColumn
+        '
+        Me.CreatedDataGridViewTextBoxColumn.DataPropertyName = "Created"
+        Me.CreatedDataGridViewTextBoxColumn.HeaderText = "Created"
+        Me.CreatedDataGridViewTextBoxColumn.Name = "CreatedDataGridViewTextBoxColumn"
         '
         'CharacterTestForm
         '
@@ -251,8 +337,9 @@ Partial Class CharacterTestForm
         CType(Me.CharacterBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CharacterBindingNavigator.ResumeLayout(False)
         Me.CharacterBindingNavigator.PerformLayout()
-        CType(Me.CharacterBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CharacterBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CharacterBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -279,4 +366,16 @@ Partial Class CharacterTestForm
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents CharacterBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents CharacterBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents NameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LevelDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RaceDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ProfessionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GenderDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RankDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DeathsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AgeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents JoinedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CreatedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

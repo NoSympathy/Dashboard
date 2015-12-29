@@ -14,7 +14,7 @@ Public Class CharacterTestForm
         Dim Characters = JsonConvert.DeserializeObject(Of List(Of Character))(json)
 
         'CharacterBindingSource.DataSource = Characters
-        DataGridView1.DataSource = CharacterBindingSource
+        DataGridView1.DataSource = Characters
         RichTextBox1.Text = json
 
     End Sub
