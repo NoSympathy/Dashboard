@@ -1,7 +1,7 @@
 ﻿Public Class Gw2Endpoints
 
 
-    Public Const BaseUrl As String = "https://api.guildwars2.com/"
+    Public Const BaseUrl As String = "https://api.guildwars2.com"
 
 
 
@@ -28,7 +28,7 @@
     Public Const AchievementsDaily = "/v2/achievements/daily"
     Public Const Groups = "/v2/achievements/groups"
     Public Const Build = "/v2/build"
-    Public Const Characters = "/v2/characters"
+    Public Const CharacterEndPoints = "/v2/characters?page=0&"
     Public Const Colors = "/v2/colors"
     Public Const Exchange = "/v2/commerce/exchange"
     Public Const ExchangeCoins = "/v2/commerce/exchange/coins"
