@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="mapArrays.vb" />
+    <Compile Include="Account.vb" />
     <Compile Include="Guild.vb" />
     <Compile Include="Character.vb" />
     <Compile Include="Member.vb" />
@@ -106,6 +107,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="World.vb" />
+    <Compile Include="WvW.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
