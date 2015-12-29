@@ -1,9 +1,6 @@
 ﻿Imports Models
 Imports Newtonsoft.Json
 
-
-
-
 Public Class Form1
     Dim count As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -34,11 +31,7 @@ Public Class Form1
         Personal.Show()
     End Sub
 
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub TabControl5_Selected(sender As Object, e As TabControlEventArgs) Handles TabControl1.Selected
+    Private Sub TabControl4_Selected(sender As Object, e As TabControlEventArgs) Handles TabControl1.Selected
         WebControl1.Source = New Uri("http://gw2timer.com/?page=Tile")
     End Sub
 
@@ -46,10 +39,5 @@ Public Class Form1
         WebControl2.Source = New Uri("http://www.youtube.com/embed?listType=playlist&list=PLfhuRJY8whYCPeUgZRM2Gkm_lirSUPMfP")
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        WebControl2.Source = New Uri("http://www.youtube.com/embed?listType=playlist&list=PLfhuRJY8whYCPeUgZRM2Gkm_lirSUPMfP")
-        music.Show()
-
-    End Sub
 
 End Class

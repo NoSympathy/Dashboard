@@ -27,7 +27,6 @@ Partial Class Form1
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -108,15 +107,6 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "     Music Playlist     "
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(62, 524)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'WebControl2
         '
@@ -253,7 +243,6 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(823, 548)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.lblCountMember)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
@@ -288,5 +277,4 @@ Partial Class Form1
     Friend WithEvents lblCountMember As System.Windows.Forms.Label
     Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
     Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
-    Friend WithEvents Button2 As Button
 End Class
