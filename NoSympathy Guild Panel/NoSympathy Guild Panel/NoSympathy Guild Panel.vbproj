@@ -157,6 +157,12 @@
     <Compile Include="Personal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Personal_Web.Designer.vb">
+      <DependentUpon>Personal_Web.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal_Web.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personal.resx">
       <DependentUpon>Personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal_Web.resx">
+      <DependentUpon>Personal_Web.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
