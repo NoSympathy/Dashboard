@@ -1,7 +1,7 @@
 ﻿Public Class Gw2Endpoints
 
 
-    Public Const BaseUrl As String = "https://api.guildwars2.com/"
+    Public Const BaseUrl As String = "https://api.guildwars2.com"
 
 
 
