@@ -91,7 +91,7 @@ Partial Class CharacterTestForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(977, 617)
+        Me.ClientSize = New System.Drawing.Size(1123, 617)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LinkLabel1)

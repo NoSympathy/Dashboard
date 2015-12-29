@@ -11,11 +11,9 @@ Public Class CharacterTestForm
         Dim json As String
         json = apiControllers.GetCharacters(TextBox1.Text)
 
+        Dim Character = JsonConvert.DeserializeObject(Of List(Of Character))(json)
+
         RichTextBox1.Text = json
-
-
-
-
 
     End Sub
 

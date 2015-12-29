@@ -87,6 +87,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crafting.vb" />
     <Compile Include="mapArrays.vb" />
     <Compile Include="Account.vb" />
     <Compile Include="Guild.vb" />
