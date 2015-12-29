@@ -1,4 +1,5 @@
 ﻿Imports System.Net
+Imports APICore
 
 
 Public Class Character
@@ -7,7 +8,7 @@ Public Class Character
         Dim endPoints As Uri
         Dim ret As String
 
-        endPoints = New Uri(String.Format(APICore.Endpoints.BaseUrl + APICore.Endpoints.CharacterEndPoints + "access_token={0}", access_token))
+        endPoints = New Uri(String.Format(APICore.Gw2Endpoints.BaseUrl + APICore.Gw2Endpoints.CharacterEndPoints + "access_token={0}", access_token))
 
         client = New WebClient()
         ret = client.DownloadString(endPoints)

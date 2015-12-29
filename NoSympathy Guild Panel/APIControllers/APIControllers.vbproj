@@ -109,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.vb" />
-    <Compile Include="Guild.vb" />
     <Compile Include="AccountControllers.vb" />
     <Compile Include="BaseController.vb" />
     <Compile Include="GuildController.vb" />
