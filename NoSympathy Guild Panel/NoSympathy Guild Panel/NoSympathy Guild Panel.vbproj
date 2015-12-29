@@ -46,6 +46,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.7.5.1, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214" />
+    <Reference Include="Awesomium.Windows.Forms, Version=1.7.5.1, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86" />
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -87,6 +89,12 @@
     <Compile Include="FormTestingGrounds.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="music.Designer.vb">
+      <DependentUpon>music.vb</DependentUpon>
+    </Compile>
+    <Compile Include="music.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -121,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTestingGrounds.resx">
       <DependentUpon>FormTestingGrounds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="music.resx">
+      <DependentUpon>music.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
