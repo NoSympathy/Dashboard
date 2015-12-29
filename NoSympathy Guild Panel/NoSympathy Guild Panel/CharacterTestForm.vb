@@ -1,4 +1,5 @@
-﻿Imports APIControllers
+﻿Imports Models
+Imports Newtonsoft.Json
 
 Public Class CharacterTestForm
     Private Sub TextBox1_Click(sender As Object, e As EventArgs) Handles TextBox1.Click
@@ -6,10 +7,18 @@ Public Class CharacterTestForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim apiController = New Character()
+        Dim apiControllers = New APIControllers.Character()
         Dim json As String
-        json = apiController.GetCharacters(Label2.Text)
+        json = apiControllers.GetCharacters(TextBox1.Text)
 
-        Label2.Text = json
+        RichTextBox1.Text = json
+
+
+
+
+
     End Sub
+
+
+
 End Class

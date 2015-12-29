@@ -192,6 +192,12 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\APIControllers.Character.datasource" />
+    <None Include="My Project\DataSources\APIControllers.GuildController.datasource" />
+    <None Include="My Project\DataSources\APICore.Endpoints.datasource" />
+    <None Include="My Project\DataSources\Models.Character.datasource" />
+    <None Include="My Project\DataSources\Models.Guild.datasource" />
+    <None Include="My Project\DataSources\Models.Member.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -216,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\component.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
