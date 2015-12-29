@@ -11,6 +11,10 @@ Public Class CharacterTestForm
         Dim json As String
         json = apiControllers.GetCharacters(TextBox1.Text)
 
+        Dim Characters = JsonConvert.DeserializeObject(Of List(Of Character))(json)
+
+        'CharacterBindingSource.DataSource = Characters
+        DataGridView1.DataSource = CharacterBindingSource
         RichTextBox1.Text = json
 
 
