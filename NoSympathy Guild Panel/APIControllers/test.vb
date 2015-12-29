@@ -1,21 +1,20 @@
 ﻿Imports System.Net
 
 
-Public Class Character
+Public Class test
     Public Function GetCharacters(access_token As String) As String
         Dim client As WebClient
-        Dim endPoints As Uri
+        Dim Endpoints As Uri
         Dim ret As String
 
-        endPoints = New Uri(String.Format(APICore.Endpoints.BaseUrl + APICore.Endpoints.CharacterEndPoints + "access_token={0}", access_token))
+        Endpoints = New Uri(APICore.Endpoints.BaseUrl + APICore.Endpoints.CharacterEndPoints + "?access_token=" + access_token)
+
 
         client = New WebClient()
-        ret = client.DownloadString(endPoints)
+        ret = client.DownloadString(Endpoints)
 
 
         client.Dispose()
-
-
         Return ret
     End Function
 

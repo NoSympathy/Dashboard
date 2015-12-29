@@ -12,5 +12,5 @@
     ''' </summary>
     ''' <remarks></remarks>
     Public Const GuildMemberEndPoints As String = "/v2/guild/{0}/members"
-    Public Const CharacterEndPoints As String = "/v2/characters"
+    Public Const CharacterEndPoints As String = "/v2/characters?page=0&"
 End Class
