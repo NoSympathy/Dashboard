@@ -5,6 +5,8 @@ Public Class Guild
     Public Logs As List(Of String)
     Public Motd As String
 
+
+
     Public Sub New(guildName As String, emblem As String, logs As List(Of String), motd As String)
 
         Me.Emblem = emblem

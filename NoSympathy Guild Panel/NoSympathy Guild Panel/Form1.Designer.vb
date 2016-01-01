@@ -23,194 +23,29 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.lblCountMember = New System.Windows.Forms.Label()
+        Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
+        Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.WebControl2 = New Awesomium.Windows.Forms.WebControl(Me.components)
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.TabPage9 = New System.Windows.Forms.TabPage()
-        Me.TabPage10 = New System.Windows.Forms.TabPage()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.lblCountMember = New System.Windows.Forms.Label()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
+        Me.MemberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RankDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JoinedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage4.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl1.SuspendLayout()
+        CType(Me.MemberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Controls.Add(Me.TabPage6)
-        Me.TabControl1.Controls.Add(Me.TabPage7)
-        Me.TabControl1.Controls.Add(Me.TabPage8)
-        Me.TabControl1.Controls.Add(Me.TabPage9)
-        Me.TabControl1.Controls.Add(Me.TabPage10)
-        Me.TabControl1.Location = New System.Drawing.Point(16, 15)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.ShowToolTips = True
-        Me.TabControl1.Size = New System.Drawing.Size(794, 507)
-        Me.TabControl1.TabIndex = 0
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage1.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "     Welcome     "
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackgroundImage = Global.NoSympathy_Guild_Panel.My.Resources.Resources.component
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(744, 437)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(35, 34)
-        Me.Button1.TabIndex = 0
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.WebControl2)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "     Music Playlist     "
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'WebControl2
-        '
-        Me.WebControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebControl2.Location = New System.Drawing.Point(4, 4)
-        Me.WebControl2.Size = New System.Drawing.Size(778, 470)
-        Me.WebControl2.TabIndex = 0
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "     NoS Information     "
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Controls.Add(Me.ListView1)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "     Guild Members     "
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'ListView1
-        '
-        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListView1.Location = New System.Drawing.Point(0, 0)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(786, 478)
-        Me.ListView1.TabIndex = 0
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Tile
-        '
-        'TabPage5
-        '
-        Me.TabPage5.Controls.Add(Me.WebControl1)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "     Dynamic Events     "
-        Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'WebControl1
-        '
-        Me.WebControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebControl1.Location = New System.Drawing.Point(0, 0)
-        Me.WebControl1.Size = New System.Drawing.Size(786, 478)
-        Me.WebControl1.TabIndex = 0
-        '
-        'TabPage6
-        '
-        Me.TabPage6.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "     World Map     "
-        Me.TabPage6.UseVisualStyleBackColor = True
-        '
-        'TabPage7
-        '
-        Me.TabPage7.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage7.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "     WvW Info     "
-        Me.TabPage7.UseVisualStyleBackColor = True
-        '
-        'TabPage8
-        '
-        Me.TabPage8.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage8.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage8.TabIndex = 9
-        Me.TabPage8.Text = "     Support     "
-        Me.TabPage8.UseVisualStyleBackColor = True
-        '
-        'TabPage9
-        '
-        Me.TabPage9.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage9.TabIndex = 10
-        Me.TabPage9.Text = "     About     "
-        Me.TabPage9.UseVisualStyleBackColor = True
-        '
-        'TabPage10
-        '
-        Me.TabPage10.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage10.Name = "TabPage10"
-        Me.TabPage10.Size = New System.Drawing.Size(786, 478)
-        Me.TabPage10.TabIndex = 11
-        Me.TabPage10.Text = "     Extras     "
-        Me.TabPage10.UseVisualStyleBackColor = True
         '
         'LinkLabel1
         '
@@ -238,11 +73,172 @@ Partial Class Form1
         Me.lblCountMember.Text = "{members_count}"
         Me.lblCountMember.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
+        'WebControl1
+        '
+        Me.WebControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebControl1.Location = New System.Drawing.Point(0, 0)
+        Me.WebControl1.Size = New System.Drawing.Size(786, 478)
+        Me.WebControl1.TabIndex = 0
+        '
+        'WebControl2
+        '
+        Me.WebControl2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebControl2.Location = New System.Drawing.Point(4, 4)
+        Me.WebControl2.Size = New System.Drawing.Size(778, 470)
+        Me.WebControl2.TabIndex = 0
+        '
+        'TabPage10
+        '
+        Me.TabPage10.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage10.TabIndex = 11
+        Me.TabPage10.Text = "     Extras     "
+        Me.TabPage10.UseVisualStyleBackColor = True
+        '
+        'TabPage9
+        '
+        Me.TabPage9.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage9.TabIndex = 10
+        Me.TabPage9.Text = "     About     "
+        Me.TabPage9.UseVisualStyleBackColor = True
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage8.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage8.TabIndex = 9
+        Me.TabPage8.Text = "     Support     "
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.DataGridView1)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "     Guild Members     "
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.RankDataGridViewTextBoxColumn, Me.JoinedDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.MemberBindingSource
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(786, 478)
+        Me.DataGridView1.TabIndex = 1
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "     NoS Information     "
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "     Music Playlist     "
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
+        Me.TabControl1.Controls.Add(Me.TabPage9)
+        Me.TabControl1.Controls.Add(Me.TabPage10)
+        Me.TabControl1.Location = New System.Drawing.Point(16, 15)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.ShowToolTips = True
+        Me.TabControl1.Size = New System.Drawing.Size(794, 507)
+        Me.TabControl1.TabIndex = 0
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage1.Size = New System.Drawing.Size(786, 478)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "     Welcome     "
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackgroundImage = Global.NoSympathy_Guild_Panel.My.Resources.Resources.component
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(20, 525)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(21, 21)
+        Me.Button1.TabIndex = 0
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'MemberBindingSource
+        '
+        Me.MemberBindingSource.DataSource = GetType(Models.Member)
+        '
+        'NameDataGridViewTextBoxColumn
+        '
+        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "Name"
+        Me.NameDataGridViewTextBoxColumn.HeaderText = "Name"
+        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
+        Me.NameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'RankDataGridViewTextBoxColumn
+        '
+        Me.RankDataGridViewTextBoxColumn.DataPropertyName = "Rank"
+        Me.RankDataGridViewTextBoxColumn.HeaderText = "Rank"
+        Me.RankDataGridViewTextBoxColumn.Name = "RankDataGridViewTextBoxColumn"
+        Me.RankDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'JoinedDataGridViewTextBoxColumn
+        '
+        Me.JoinedDataGridViewTextBoxColumn.DataPropertyName = "Joined"
+        Me.JoinedDataGridViewTextBoxColumn.HeaderText = "Joined"
+        Me.JoinedDataGridViewTextBoxColumn.Name = "JoinedDataGridViewTextBoxColumn"
+        Me.JoinedDataGridViewTextBoxColumn.ReadOnly = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(823, 548)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblCountMember)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
@@ -250,31 +246,31 @@ Partial Class Form1
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "{title}"
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage5.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControl1.ResumeLayout(False)
+        CType(Me.MemberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents TabPage5 As TabPage
-    Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents TabPage7 As TabPage
-    Friend WithEvents TabPage8 As TabPage
-    Friend WithEvents TabPage9 As TabPage
-    Friend WithEvents TabPage10 As TabPage
-    Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents ListView1 As System.Windows.Forms.ListView
     Friend WithEvents lblCountMember As System.Windows.Forms.Label
     Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
     Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
+    Friend WithEvents TabPage10 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage9 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage8 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents NameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RankDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents JoinedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MemberBindingSource As System.Windows.Forms.BindingSource
 End Class

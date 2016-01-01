@@ -7,15 +7,15 @@ Public Class CharacterTestForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim apiControllers = New APIControllers.Character()
+        Dim apiControllers = New APIControllers.CharacterController()
         Dim json As String
-        json = apiControllers.GetCharacters(TextBox1.Text)
+        'json = 
 
-        Dim Characters = JsonConvert.DeserializeObject(Of List(Of Character))(json)
+        Dim Characters = apiControllers.GetCharacters(TextBox1.Text)
 
         'CharacterBindingSource.DataSource = Characters
         DataGridView1.DataSource = Characters
-        RichTextBox1.Text = json
+        'RichTextBox1.Text = json
 
     End Sub
 

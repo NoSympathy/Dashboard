@@ -4,8 +4,8 @@ Imports Newtonsoft.Json
 
 Public Class GuildController
     Inherits BaseController
-    Public Function GetGuildMembers(access_token As String) As List(Of Member)
-        
+    Public Function GetGuildMembers() As List(Of Member)
+
         Dim endPoints = New Uri(String.Format(APICore.Gw2Endpoints.BaseUrl + APICore.Gw2Endpoints.GuildMember, APICore.NosSettings.GuildId, APICore.NosSettings.GuildLeaderAccessToken))
 
         Dim jsonres = GetApiDataByUriJson(endPoints)

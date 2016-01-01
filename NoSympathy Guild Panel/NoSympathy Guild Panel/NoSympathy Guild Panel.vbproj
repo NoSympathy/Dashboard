@@ -79,6 +79,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -116,6 +117,12 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormList.Designer.vb">
+      <DependentUpon>FormList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTestingGrounds.Designer.vb">
@@ -180,6 +187,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormList.resx">
+      <DependentUpon>FormList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTestingGrounds.resx">
       <DependentUpon>FormTestingGrounds.vb</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +223,7 @@
     <None Include="My Project\DataSources\APIControllers.Character.datasource" />
     <None Include="My Project\DataSources\APIControllers.GuildController.datasource" />
     <None Include="My Project\DataSources\APICore.Endpoints.datasource" />
+    <None Include="My Project\DataSources\FormList.datasource" />
     <None Include="My Project\DataSources\Models.Character.datasource" />
     <None Include="My Project\DataSources\Models.Guild.datasource" />
     <None Include="My Project\DataSources\Models.Member.datasource" />

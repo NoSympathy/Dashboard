@@ -5,11 +5,21 @@ Imports Newtonsoft.Json
 Public Class WorldController
     Inherits BaseController
     Public Function GetWorldInfo(Optional worldid As Integer = NosSettings.WorldId) As World
-        Dim endPoints = New Uri(Gw2Endpoints.BaseUrl + Gw2Endpoints.World + worldid.ToString())
+        Dim endPoints = New Uri(Gw2Endpoints.BaseUrl + Gw2Endpoints.World + "/?id=" + worldid.ToString())
 
         Dim jsonRes = GetApiDataByUriJson(endPoints)
 
         Dim ret = JsonConvert.DeserializeObject(Of World)(jsonRes)
+
+        Return ret
+    End Function
+
+    Public Function GetWorlds() As List(Of World)
+        Dim endPoints = New Uri(Gw2Endpoints.BaseUrl + Gw2Endpoints.World + "/?ids=all")
+
+        Dim jsonRes = GetApiDataByUriJson(endPoints)
+
+        Dim ret = JsonConvert.DeserializeObject(Of List(Of World))(jsonRes)
 
         Return ret
     End Function
