@@ -25,11 +25,9 @@ Partial Class Personal
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.lblAccount = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.CharacterBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RankDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RaceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,8 +36,10 @@ Partial Class Personal
         Me.LevelDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DeathsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblAccount = New System.Windows.Forms.Label()
+        Me.CharacterBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +56,7 @@ Partial Class Personal
         Me.TabControl1.Location = New System.Drawing.Point(12, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(846, 539)
+        Me.TabControl1.Size = New System.Drawing.Size(858, 539)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -67,39 +67,29 @@ Partial Class Personal
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(838, 513)
+        Me.TabPage1.Size = New System.Drawing.Size(850, 513)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "     My Character List     "
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'lblAccount
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(838, 513)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Pvp Info"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.lblAccount.AutoSize = True
+        Me.lblAccount.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAccount.Location = New System.Drawing.Point(6, 29)
+        Me.lblAccount.Name = "lblAccount"
+        Me.lblAccount.Size = New System.Drawing.Size(70, 22)
+        Me.lblAccount.TabIndex = 2
+        Me.lblAccount.Text = "Label3"
         '
-        'Button1
+        'Label2
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(779, 557)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Close"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(698, 557)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Refresh"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 7)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(78, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Account Name"
         '
         'DataGridView1
         '
@@ -109,12 +99,8 @@ Partial Class Personal
         Me.DataGridView1.DataSource = Me.CharacterBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(3, 64)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(825, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(845, 378)
         Me.DataGridView1.TabIndex = 0
-        '
-        'CharacterBindingSource
-        '
-        Me.CharacterBindingSource.DataSource = GetType(Models.Character)
         '
         'NameDataGridViewTextBoxColumn
         '
@@ -164,30 +150,44 @@ Partial Class Personal
         Me.DeathsDataGridViewTextBoxColumn.HeaderText = "Deaths"
         Me.DeathsDataGridViewTextBoxColumn.Name = "DeathsDataGridViewTextBoxColumn"
         '
-        'Label2
+        'CharacterBindingSource
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 7)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Account Name"
+        Me.CharacterBindingSource.DataSource = GetType(Models.Character)
         '
-        'lblAccount
+        'TabPage2
         '
-        Me.lblAccount.AutoSize = True
-        Me.lblAccount.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAccount.Location = New System.Drawing.Point(6, 29)
-        Me.lblAccount.Name = "lblAccount"
-        Me.lblAccount.Size = New System.Drawing.Size(70, 22)
-        Me.lblAccount.TabIndex = 2
-        Me.lblAccount.Text = "Label3"
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(850, 513)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Pvp Info"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(791, 557)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Close"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(698, 557)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Refresh"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Personal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(870, 586)
+        Me.ClientSize = New System.Drawing.Size(882, 586)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

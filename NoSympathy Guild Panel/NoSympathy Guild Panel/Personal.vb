@@ -13,7 +13,7 @@ Public Class Personal
             End If
         Else
             Dim account = GetMyInfo()
-            lblAccount.Text = account.Name
+            lblAccount.Text = "Welcome, " + account.Name
             DataGridView1.DataSource = account.Characters
         End If
 
@@ -29,4 +29,9 @@ Public Class Personal
         account.Characters = characters
         Return account
     End Function
+
+    Private Sub TabControl1_Click(sender As Object, e As EventArgs) Handles TabControl1.Click
+        MsgBox("test")
+    End Sub
+
 End Class
