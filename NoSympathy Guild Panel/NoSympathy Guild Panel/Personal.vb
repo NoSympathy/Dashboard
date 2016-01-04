@@ -1,6 +1,6 @@
 ﻿Imports APIControllers
 Imports Models
-Imports Newtonsoft
+Imports pvpstats
 
 Public Class Personal
 
@@ -10,6 +10,7 @@ Public Class Personal
         Dim char_controller = New CharacterController()
         Dim account = acc_controller.GetAccount(My.Settings.APIKey)
         Dim characters = char_controller.GetCharacters(My.Settings.APIKey)
+
 
         account.Characters = characters
         Return account
@@ -33,9 +34,19 @@ Public Class Personal
 
     Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
         ' PvP Info (wins (number) losses(Number), desertions(Number), byes(Number), forfeits(Number)
+        If (My.Settings.APIKey.Trim() = "") Then
+            If (MessageBox.Show("Add your API key first") = DialogResult.OK) Then
+                Settings.Show()
+            End If
+        Else
 
 
+
+
+        End If
     End Sub
+
+
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

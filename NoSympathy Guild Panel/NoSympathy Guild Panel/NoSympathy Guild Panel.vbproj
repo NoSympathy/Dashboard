@@ -170,6 +170,12 @@
     <Compile Include="Personal_Web.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PVPTestForm.Designer.vb">
+      <DependentUpon>PVPTestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PVPTestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -211,6 +217,9 @@
     <EmbeddedResource Include="Personal_Web.resx">
       <DependentUpon>Personal_Web.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PVPTestForm.resx">
+      <DependentUpon>PVPTestForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +236,9 @@
     <None Include="My Project\DataSources\Models.Character.datasource" />
     <None Include="My Project\DataSources\Models.Guild.datasource" />
     <None Include="My Project\DataSources\Models.Member.datasource" />
+    <None Include="My Project\DataSources\Models.PVP.datasource" />
+    <None Include="My Project\DataSources\Models.PVPSTATS.datasource" />
+    <None Include="My Project\DataSources\Models.pvp_GETorPUT.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
