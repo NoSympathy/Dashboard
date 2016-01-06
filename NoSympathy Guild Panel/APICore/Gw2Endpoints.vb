@@ -68,7 +68,7 @@
 
     Public Const Minis = "/v2/minis"
     Public Const PvpGames = "/v2/pvp/games"
-    Public Const PvpStats = "/v2/pvp/stats"
+    Public Const PvPStats = "/v2/pvp/stats"
     Public Const Quaggans = "/v2/quaggans"
     Public Const Recipes = "/v2/recipes"
     Public Const RecipeSearch = "/v2/recipes/search"

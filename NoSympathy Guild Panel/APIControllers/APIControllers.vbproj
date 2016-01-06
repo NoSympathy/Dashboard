@@ -127,6 +127,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="pvpconfigurations.vb" />
     <Compile Include="WorldController.vb" />
   </ItemGroup>
   <ItemGroup>
