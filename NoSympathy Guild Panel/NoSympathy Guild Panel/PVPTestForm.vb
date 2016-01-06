@@ -1,4 +1,5 @@
-﻿Imports Models
+﻿Imports APIControllers
+Imports Models
 Imports Newtonsoft.Json
 
 Public Class PVPTestForm
@@ -7,11 +8,12 @@ Public Class PVPTestForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim pvp As Models.PVP
-        Dim json As String
+        Dim pvp As New pvpconfigurations()
+        Dim json As String = ""
         'json = 
 
-        Dim P = pvp.aggregate
+
+        Dim P = pvp.GetPvPStats(TextBox1.Text)
 
         'CharacterBindingSource.DataSource = Characters
         DataGridView1.DataSource = P
