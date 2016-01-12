@@ -87,6 +87,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EngineEndpoints.vb" />
+    <Compile Include="Enums.vb" />
     <Compile Include="Gw2Endpoints.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

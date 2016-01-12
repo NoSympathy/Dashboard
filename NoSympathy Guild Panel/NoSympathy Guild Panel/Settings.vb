@@ -1,4 +1,6 @@
-﻿Public Class Settings
+﻿Imports APIControllers
+
+Public Class Settings
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox1.Text = My.Settings.APIKey
@@ -27,10 +29,19 @@
         My.Settings.APIKey = TextBox1.Text
         TextBox1.ReadOnly = True
         My.Settings.Save()
-        CopyButton.Show()
+
+        Dim controller = New AccountControllers()
+        Dim account = controller.GetAccount(My.Settings.APIKey)
+        Dim engineresponse = controller.SubmitMyData(account.Name, My.Settings.APIKey)
+        If engineresponse Then
+            CopyButton.Show()
 
 
-        MsgBox("API Key Saved! Thank you for flying with AiRNoS, Have a Taco, Bye Bye Now!", MsgBoxStyle.Information)
+            MsgBox("API Key Saved! Thank you for flying with AiRNoS, Have a Taco, Bye Bye Now!", MsgBoxStyle.Information)
+        Else
+            MsgBox("uh oh something broken!")
+        End If
+        
     End Sub
 
     Private Sub CopyButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyButton.Click
